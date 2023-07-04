@@ -13,5 +13,5 @@ for i in range(length_of_list):
     sample_list.append(sample_tuple)
 print(sample_list)
 
-sample_list.sort(key=lambda x:x[1])
+sample_list.sort(key=lambda x: x[-1])
 print(sample_list)

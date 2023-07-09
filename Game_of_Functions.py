@@ -13,6 +13,10 @@ def Sum_num(numbers):
     global total
     for num in numbers:
         total +=num
+        if numbers[-1]==num:
+            print(num,end=" ")
+        else:
+            print(num,"+ ",end="")
     return total
 
-print("Sum:",Sum_num(input_list))
+print("=",Sum_num(input_list))

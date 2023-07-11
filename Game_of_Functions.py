@@ -7,16 +7,20 @@
 input_list = input("Enter int values : ")
 input_list = input_list.split(",")
 input_list = [int(i) for i in input_list]
+length = len(input_list)
+print(length)
 total = 0
 
 def Sum_num(numbers):
     global total
+    index = 0
     for num in numbers:
         total +=num
-        if numbers[-1]==num:
+        if index == length-1:
             print(num,end=" ")
         else:
             print(num,"+ ",end="")
+        index +=1
     return total
 
 print("=",Sum_num(input_list))

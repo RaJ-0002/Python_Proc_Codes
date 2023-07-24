@@ -7,3 +7,9 @@
 n=int(input(" Enter integer number: "))
 add_25 = lambda x:x+25
 print(" Output : ",add_25(n))
+
+print("******without lambda **********")
+
+def Sum_25(num):
+    return n+25
+print("output : ",Sum_25(n))
